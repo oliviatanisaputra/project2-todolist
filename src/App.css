@@ -1,38 +1,129 @@
 .App {
-  text-align: center;
+ max-width: 500px;
+ width: 100%;
+ margin: 0 auto;
+
+ box-sizing: border-box;
+ padding: 20px;
+ /* border: 1px solid gray; */
+
+ display: flex;
+ flex-direction: column;
+ gap: 30px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.Header h1 {
+  margin-bottom: 0px;
+  color: #1f93ff;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+
+.TodoEditor .editor_wrapper {
+  width: 100%;
+  display: flex;
+  gap: 10px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.TodoEditor input {
+  flex: 1;
+  box-sizing: border-box;
+  border: 1px solid rgb(220, 220, 220);
+  padding: 15px;
+}
+
+.TodoEditor input:focus {
+  outline: none;
+  border: 1px solid #1f93ff;
+}
+
+.TodoEditor button {
+  border: none;
+  cursor: pointer;
+  width: 80px;
+  background-color: #1f93ff;
+  color: white;
+  border-radius: 5px;
+}
+
+.TodoList .searchbar {
+  margin-bottom: 20px;
+  width: 100%;
+  box-sizing: border-box;
+  border: none;
+  border-bottom: 1px solid rgb(220, 220, 220);
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.TodoList .searchbar:focus {
+  outline: none;
+  border-bottom: 1px solid #1f93ff;
+}
+
+.TodoList .list_wrapper {
   display: flex;
   flex-direction: column;
+  gap: 20px;
+}
+
+
+
+.TodoItem {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgb(240, 240, 240);
+}
+
+.TodoItem .checkbox_col {
+    width: 20px;
+}
+
+.TodoItem .title_col {
+    flex: 1;
+}
+
+.TodoItem .date_col {
+    font-size: 14px;
+    color: gray;
+}
+
+.TodoItem .btn_col button {
+    cursor: pointer;
+    color: gray;
+    font-size: 14px;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+/* .TodoItem {
+  display: flex;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  gap: 20px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid rgb(240, 240, 240);
 }
 
-.App-link {
-  color: #61dafb;
+.TodoItem .checkbox_col {
+  width: 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.TodoEditor .title_col {
+  flex: 1;
 }
+
+.TodoEditor .date_col {
+  color: gray;
+  font-size: 14px;
+}
+
+.TodoItem .btn_col button {
+  cursor: pointer;
+  color: gray;
+  font-size: 14px;
+  border: none;
+  border-radius: 5px;
+  padding: 5px;
+} */
