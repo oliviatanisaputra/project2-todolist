@@ -1,23 +1,29 @@
 .App {
- max-width: 500px;
- width: 100%;
- margin: 0 auto;
+  max-width: 500px;
+  width: 100%;
+  margin: 0 auto;
 
- box-sizing: border-box;
- padding: 20px;
- /* border: 1px solid gray; */
+  box-sizing: border-box;
+  padding: 20px;
 
- display: flex;
- flex-direction: column;
- gap: 30px;
+  /* border: 1px solid gray; */
+
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
 }
 
+
+
+/* Header */
 .Header h1 {
   margin-bottom: 0px;
   color: #1f93ff;
 }
 
 
+
+/* TodoEditor */
 .TodoEditor .editor_wrapper {
   width: 100%;
   display: flex;
@@ -28,6 +34,7 @@
   flex: 1;
   box-sizing: border-box;
   border: 1px solid rgb(220, 220, 220);
+  border-radius: 5px;
   padding: 15px;
 }
 
@@ -37,14 +44,17 @@
 }
 
 .TodoEditor button {
-  border: none;
   cursor: pointer;
   width: 80px;
+  border: none;
   background-color: #1f93ff;
   color: white;
   border-radius: 5px;
 }
 
+
+
+/* TodoList */
 .TodoList .searchbar {
   margin-bottom: 20px;
   width: 100%;
@@ -68,57 +78,29 @@
 
 
 
+/* TodoItem */
+/* 할 일 아이템 박스 스타일 적용 */
 .TodoItem {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-    padding-bottom: 20px;
-    border-bottom: 1px solid rgb(240, 240, 240);
-}
-
-.TodoItem .checkbox_col {
-    width: 20px;
-}
-
-.TodoItem .title_col {
-    flex: 1;
-}
-
-.TodoItem .date_col {
-    font-size: 14px;
-    color: gray;
-}
-
-.TodoItem .btn_col button {
-    cursor: pointer;
-    color: gray;
-    font-size: 14px;
-    border: none;
-    border-radius: 5px;
-    padding: 5px;
-}
-
-/* .TodoItem {
   display: flex;
   align-items: center;
   gap: 20px;
-  margin-bottom: 20px;
+  padding-bottom: 20px;
   border-bottom: 1px solid rgb(240, 240, 240);
 }
-
+/* 체크박스를 감싼 박스에 스타일 적용 */
 .TodoItem .checkbox_col {
   width: 20px;
 }
-
-.TodoEditor .title_col {
+/* 할 일 텍스트를 감싼 박스에 스타일 적용 */
+.TodoItem .title_col {
   flex: 1;
 }
-
-.TodoEditor .date_col {
-  color: gray;
+/* 할 일 아이템 등록 시간을 감싼 박스에 스타일 적용 */
+.TodoItem .date_col {
   font-size: 14px;
+  color: gray;
 }
-
+/* 삭제 버튼에 스타일 적용 */
 .TodoItem .btn_col button {
   cursor: pointer;
   color: gray;
@@ -126,4 +108,4 @@
   border: none;
   border-radius: 5px;
   padding: 5px;
-} */
+}
