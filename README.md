@@ -1,4 +1,4 @@
-# Todo List Application
+# To-Do List Application
 
 A feature-rich, React-based todo list application demonstrating advanced component architecture, state management, and CRUD operations with real-time search functionality.
 
