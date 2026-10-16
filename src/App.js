@@ -84,6 +84,7 @@ function App() {
 
   return (
     <div className="App">
+  <div><img src="/todo.png" alt="todo" className="toplogo" /></div>
       <Header />
       <TodoEditor onCreate={onCreate} />
       <TodoList todo={todo} onUpdate={onUpdate} onDelete={onDelete} />

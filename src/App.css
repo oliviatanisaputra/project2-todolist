@@ -14,11 +14,21 @@
 }
 
 
+.toplogo {
+  display: flex;
+  /* justify-content: center; */
+  /* align-items: center; */
+  justify-self: center;
+  align-self: center;
+  /* margin-bottom: 20px; */
+  width: 70%;
+  /* max-width: 20vw; */
+}
 
 /* Header */
 .Header h1 {
   margin-bottom: 0px;
-  color: #1f93ff;
+  color: #0072A0;
 }
 
 
@@ -40,14 +50,14 @@
 
 .TodoEditor input:focus {
   outline: none;
-  border: 1px solid #1f93ff;
+  border: 1px solid #0072A0;
 }
 
 .TodoEditor button {
   cursor: pointer;
   width: 80px;
   border: none;
-  background-color: #1f93ff;
+  background-color: #0072A0;
   color: white;
   border-radius: 5px;
 }
